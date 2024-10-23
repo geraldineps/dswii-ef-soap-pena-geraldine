@@ -1,0 +1,66 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://www.cibertec.edu.pe/ws/objects"
+           targetNamespace="http://www.cibertec.edu.pe/ws/objects"
+           elementFormDefault="qualified">
+    <xs:complexType name="paisws">
+        <xs:sequence>
+            <xs:element name="id_pais" type="xs:int" />
+            <xs:element name="nombre" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="getPaisesRequest">
+        <xs:complexType>
+            <xs:sequence />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getPaisesResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="paises"
+                            type="tns:paisws" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getPaisRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getPaisResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pais" type="tns:paisws" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="postPaisRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pais" type="tns:paisws" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="postPaisResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pais" type="tns:paisws" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="putPaisRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pais" type="tns:paisws" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="putPaisResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="pais" type="tns:paisws" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

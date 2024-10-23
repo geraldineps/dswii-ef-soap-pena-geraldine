@@ -1,0 +1,69 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://www.cibertec.edu.pe/ws/objects"
+           targetNamespace="http://www.cibertec.edu.pe/ws/objects"
+           elementFormDefault="qualified">
+    <xs:complexType name="hotelws">
+        <xs:sequence>
+            <xs:element name="id_hotel" type="xs:int" />
+            <xs:element name="nombre" type="xs:string" />
+            <xs:element name="direccion" type="xs:string" />
+            <xs:element name="ciudad" type="xs:string" />
+            <xs:element name="id_pais" type="xs:int" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="getHotelesRequest">
+        <xs:complexType>
+            <xs:sequence />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getHotelesResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="hoteles"
+                            type="tns:hotelws" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getHotelRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getHotelResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="hotel" type="tns:hotelws" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="postHotelRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="hotel" type="tns:hotelws" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="postHotelResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="hotel" type="tns:hotelws" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="putHotelRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="hotel" type="tns:hotelws" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="putHotelResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="hotel" type="tns:hotelws" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

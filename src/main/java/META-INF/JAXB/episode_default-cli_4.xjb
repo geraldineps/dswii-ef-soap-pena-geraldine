@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2024.10.23 a las 03:44:52 AM PET 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.cibertec.edu.pe/ws/objects">
+    <schemaBindings map="false">
+      <package name="pe.edu.cibertec.ws.objects"/>
+    </schemaBindings>
+    <bindings scd="tns:getHotelesRequest">
+      <class ref="pe.edu.cibertec.ws.objects.GetHotelesRequest"/>
+    </bindings>
+    <bindings scd="tns:getHotelesResponse">
+      <class ref="pe.edu.cibertec.ws.objects.GetHotelesResponse"/>
+    </bindings>
+    <bindings scd="~tns:hotelws">
+      <class ref="pe.edu.cibertec.ws.objects.Hotelws"/>
+    </bindings>
+    <bindings scd="tns:getHotelRequest">
+      <class ref="pe.edu.cibertec.ws.objects.GetHotelRequest"/>
+    </bindings>
+    <bindings scd="tns:getHotelResponse">
+      <class ref="pe.edu.cibertec.ws.objects.GetHotelResponse"/>
+    </bindings>
+    <bindings scd="tns:postHotelRequest">
+      <class ref="pe.edu.cibertec.ws.objects.PostHotelRequest"/>
+    </bindings>
+    <bindings scd="tns:postHotelResponse">
+      <class ref="pe.edu.cibertec.ws.objects.PostHotelResponse"/>
+    </bindings>
+    <bindings scd="tns:putHotelRequest">
+      <class ref="pe.edu.cibertec.ws.objects.PutHotelRequest"/>
+    </bindings>
+    <bindings scd="tns:putHotelResponse">
+      <class ref="pe.edu.cibertec.ws.objects.PutHotelResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+
